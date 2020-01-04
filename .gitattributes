@@ -1,1 +1,2 @@
-* ident
+*.txt filter=process_date
+*.txt ident

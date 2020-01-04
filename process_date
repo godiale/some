@@ -1,0 +1,9 @@
+#! /usr/bin/env perl
+
+use POSIX qw(strftime);
+my $date = strftime "%Y-%m-%d", localtime;
+
+while(<>) {
+  s/\$Date\$/$date/;
+  print;
+}
